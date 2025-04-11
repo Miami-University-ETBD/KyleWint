@@ -1,1 +1,0 @@
-window.alert("Enter At Your Own Risk (joke)")
