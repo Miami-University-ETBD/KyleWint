@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Website</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF=8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!--Header for Website-->
+  <header>
+    <h1>Welcome to My Website :]</h1>
+   <!--Navigation-->
+    <nav>
+      <a href="index.html">Home Page</a> |
+      <a href="contactme.html">Contact Me</a> |
+      <a href="materialize.html">Materialize</a> |
+      <a href="aboutme.html">About Me</a> |
+    </nav>
+  </header>
+  
+<h1>Nothing is here at the moment except placeholders. Will update when I have a portfolio.</h1>
+
+<h3>A little bit of my hobbies. (Can scroll through)</h3>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Materialize Carousel</title>
+  <!-- Materialize CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <!-- Material Icons -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <style>
+    /* Optional custom styles */
+    .carousel {
+      height: 400px; /* Set your desired height */
+    }
+    .carousel-item img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3 class="center-align">My Upcoming Work (not made yet, but will be filled in once work is actually created. For now, I will show some of my hobbies here.) </h3>
+      <!--For now, there will be palceholder images.-->
+    <div class="carousel">
+      <a class="carousel-item" href="#one!"><img src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/503040/1400623/restricted"></a>
+      <a class="carousel-item" href="#two!"><img src="https://th.bing.com/th/id/R.ced9717ff51c1501fa8597f07094bc3b?rik=QNeftEg207wm3A&riu=http%3a%2f%2fwww.publicdomainpictures.net%2fpictures%2f90000%2fvelka%2fgolf-course-1403980565w1J.jpg&ehk=g1QMNCOhtpDqcjvYIDH3dvJHAW1xZYT%2fdW83sNqb2l8%3d&risl=&pid=ImgRaw&r=0"></a>
+      <a class="carousel-item" href="#three!"><img src="https://cdn.pixabay.com/photo/2015/08/03/14/16/swimming-pool-873345_960_720.jpg"></a>
+      <a class="carousel-item" href="#four!"><img src="https://p0.piqsels.com/preview/876/278/479/stock-market-charts-graphs-finance-thumbnail.jpg"></a>
+      <a class="carousel-item" href="#five!"><img src="https://c1.wallpaperflare.com/preview/182/439/685/console-controller-gamer-gaming.jpg"></a>
+    </div>
+  </div>
+
+  <!-- jQuery and Materialize JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  
+  <script>
+    // Initialize carousel
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems, {
+        duration: 200,       // Transition duration in ms
+        dist: -50,           // Perspective zoom (negative for zoom out)
+        shift: 0,            // Spacing between center and other items
+        padding: 0,          // Padding between items
+        numVisible: 5,       // Number of visible items
+        fullWidth: false,    // Full width styling
+        indicators: false,   // Show indicators
+        noWrap: false        // Don't wrap around
+      });
+    });
+  </script>
+</body>
+</html>
