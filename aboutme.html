@@ -60,13 +60,60 @@
       </tbody>
     </table>
     
-    <h2> My Favorite quote is by Albert Einstein!: “Imagination is more important than knowledge.
+    <h2> My Favorite quote is by Albert Einstein: “Imagination is more important than knowledge.
          Knowledge is limited. Imagination encircles the world.” </h2>
         <ul>
         <li> <b>I like this quote because it relates to what I do in my major a lot and how you need to use your imagination for almost everything. </b> </li>
         <li> <i>I find it to be fun because of this exact reason. </i> </li>
         <li> <u>Using my imagination to create things that I enjoy is the most fun thing I could do! </u></li>
         </ul>
+
+        <h2>----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+          <h3>Help me decide my next game I make and why!</h3>
+
+           <!--Email me HERE-->
+       <form>
+        <div class="emailBox">
+          <label for="emailAddress">Your e-mail address</label><br />
+          <input
+            id="emailAddress"
+            type="email"
+           
+            placeholder="username@myinstitution.com"
+                   />
+            </div>
+            <div class="messageBox">
+                <label for="message">Request</label><br />
+                <textarea
+                  id="message"
+                  cols="80"
+                  rows="8"
+                  required
+                  placeholder="Type your message here."></textarea>
+              </div>
+           
+            </form>      
+
+
+ 
+            <button onclick="myFunction()">Send</button>
+
+
+            <p id="demo"></p>
+           
+            <script>
+            function myFunction() {
+              var txt;
+              if (confirm("Thank you for your submission.")) {
+                txt = "I will provide a response to you soon!";
+              } else {
+                txt = "Email me if you have any concerns: wintk@miamioh.edu";
+              }
+              document.getElementById("demo").innerHTML = txt;
+            }
+            </script>
+
   </main>
     </div>
 
