@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Materialize CSS Example</title>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+   <style>
+    
+      /* Custom gradient background */
+    body {
+      background: linear-gradient(45deg, #b89b9b, #d35a5e, #c4b0b0);
+      background-size: 400% 400%;
+      animation: gradientBG 6s ease infinite;
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+       .container {
+           margin-top: 20px;
+       }
+       h4 {
+           color: #599dac;
+       }
+       .card .card-image img {
+           height: 200px;
+           object-fit: cover;
+       }
+   </style>
+</head>
+<nav>
+       <div class="nav-wrapper dark green">
+           <nav class="header-bg">
+        <ul>
+           <li><a href="index.html">Home Page</a></li>
+           <li> <a href="aboutme.html">About Me</a></li>
+          <li> <a href="contactme.html">Contact Me</a></li>
+         <li><a href="portfolio.html">Portfolio</a></li>
+                  </ul>
+               </div>
+           </div>
+           </nav>
+<body>
+
+
+   <!-- Text and Background -->
+   <div class="container">
+       <h4 class="center-align">Welcome to My Website</h4>
+       <p class="flow-text">My name is Kyle and I love to 3D design and code for fun!</p>
+   </div>
+
+      
+   </div>
+
+
+   <!-- Cards -->
+   <div class="container">
+       <h4>I like to play video games</h4>
+       <div class="card">
+           <div class="card-image">
+               <img src="https://th.bing.com/th/id/OIP.l7Mlj04iBRC759950WquFAHaFj?rs=1&pid=ImgDetMain" alt="">
+               <span class="card-title"></span>
+           </div>
+           <div class="card-content">
+           </div>
+           <div class="card-action">
+               <div class="video-container">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/PfX77LR7NU0?si=UOVmpN0U4Bb7j5vc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>              </div>
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Tables -->
+   <div class="container">
+       <h4>My Favorite Games/Foods/Drinks (As well as favorite movie above)</h4>
+       <table class="striped">
+           <thead>
+               <tr>
+                   <th>Games</th>
+                   <th>Foods</th>
+                   <th>Drinks</th>
+               </tr>
+           </thead>
+           <tbody>
+               <tr>
+                   <td>Valorant</td>
+                   <td>Salads</td>
+                   <td>Orange Fanta</td>
+               </tr>
+               <tr>
+                   <td>Fortnite</td>
+                   <td>Orange Chicken</td>
+                   <td>Sprite</td>
+               </tr>
+               <tr>
+                   <td>Marvel Rivals</td>
+                   <td>Salmon</td>
+                   <td>Lemon Water</td>
+               </tr>
+           </tbody>
+       </table>
+   </div>
+
+
+   <!-- Shading -->
+   <div class="container">
+       <h4>More About Me</h4>
+       <div class="card-panel teal lighten-2">
+           <span class="black-text">I like to play the piano and am currently on the eSports team. I tend to try to stay as busy as I can so I don't get bored.</span>
+       </div>
+   </div>
+
+
+   <!-- Images -->
+   <div class="container">
+       <h4>Favorite Activities</h4>
+       <div class="row">
+           <div class="col s12 m6">
+            <img src="https://images.pexels.com/photos/896853/pexels-photo-896853.jpeg?auto=compress&cs=tinysrgb&h=650&w=940" alt="Gaming" class="circle responsive-img" style="width: 700px; height: 250px;">
+
+           </div>
+
+           <div class="col s12 m6">
+               <img src="https://th.bing.com/th/id/OIP.rvIV-_DP_qoERaDoZsT9MgAAAA?rs=1&pid=ImgDetMain" alt="Piano" class="circle responsive-img" style="width: 750px; height: 250px;">
+
+           </div>
+       </div>
+   </div>
+
+
+   <!-- Materialize JS -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+       document.addEventListener('DOMContentLoaded', function() {
+           var elems = document.querySelectorAll('.materialboxed');
+           var instances = M.Materialbox.init(elems);
+       });
+   </script>
+</body>
+</html>
