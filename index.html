@@ -6,6 +6,7 @@
   <meta charset="UTF=8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+  <script src="index.js"></script>
     <!--Header for Website-->
   <header>
     <h1>Welcome to My Website :]</h1>
@@ -25,6 +26,7 @@
   <main>
     <h1>This is me! </h1>
     <p>Hi! Welcome to my page. My name is Kyle and I am a current college student at Miami University! I am currently in ETBD and am trying to learn many different things at the moment.
+    </style>
     <h2>More things About Me:</h2>
  
  <!--Lists-->
@@ -33,7 +35,6 @@
       <li>I am normally a social person and like to go out a lot.</li>
       <li>I recently got into learning how to make games which is kinda fun!!!!!!!!    ¯\_ (ツ)_/¯</li>
     </ul>
-
     <h1>Games/Things I like!</h1>
    
    <!--Tables-->
@@ -60,7 +61,13 @@
       </tbody>
     </table>
     
-    <h2> I love to often learn about coding so I am able to apply it to my current learning!
+    <h2>Here are some of my favorite quote images</h2>
+
+  <center><img src="https://c4.wallpaperflare.com/wallpaper/768/391/708/great-work-quotes-great-works-are-performed-not-by-strength-but-by-perseverance-wallpaper-thumb.jpg" alt="" width="50%" height="50%"></center>
+  <center><img src="https://www.publicdomainpictures.net/pictures/180000/nahled/excellence-excel.jpg" alt="" width="50%" height="50%"></center>
+  <center><img src="https://c4.wallpaperflare.com/wallpaper/345/937/173/inspirational-motivational-quote-quotes-wallpaper-preview.jpg" alt="" width="50%" height="50%"></center>
+   
+  <h2> I love to often learn about coding so I am able to apply it to my current learning!
       Building a website from scratch feels very rewarding in you put in the effort to make the website work well.
       whether you're making a store, a portfolio, or just anything you want to create in general,
       every website tells a story, and making it your own is incredibly fun.</h2>
@@ -70,6 +77,53 @@
         <li> <i>However, I find it to be fun.</i> </li>
         <li> <u>I get to learn a lot while building this website. </u> </li>
         </ul>
+
+        <h2>----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+<h3>Help me decide my next game I make and why!</h3>
+
+    <!--Email me HERE-->
+        <form>
+          <div class="emailBox">
+            <label for="emailAddress">Your e-mail address</label><br />
+            <input
+              id="emailAddress"
+              type="email"
+             
+              placeholder="username@myinstitution.com"
+                     />
+              </div>
+              <div class="messageBox">
+                  <label for="message">Request</label><br />
+                  <textarea
+                    id="message"
+                    cols="80"
+                    rows="8"
+                    required
+                    placeholder="Type your message here."></textarea>
+                </div>
+             
+              </form>      
+  
+  
+   
+              <button onclick="myFunction()">Send</button>
+  
+  
+              <p id="demo"></p>
+             
+              <script>
+              function myFunction() {
+                var txt;
+                if (confirm("Thank you for your submission.")) {
+                  txt = "I will provide a response to you soon!";
+                } else {
+                  txt = "Email me if you have any concerns: wintk@miamioh.edu";
+                }
+                document.getElementById("demo").innerHTML = txt;
+              }
+              </script>
+
   </main>
     </div>
 

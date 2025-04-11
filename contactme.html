@@ -38,6 +38,53 @@
     <h2> If you have any questions or concerns, let me know! I normally am a very social person and
          would be happen to return an email/call. Or if 
          you are reaching out to me for reasons other than that, let me know! </h2>
+
+         <h2>----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+          <h3>Help me decide my next game I make and why!</h3>
+       <!--Email me HERE-->
+       <form>
+        <div class="emailBox">
+          <label for="emailAddress">Your e-mail address</label><br />
+          <input
+            id="emailAddress"
+            type="email"
+           
+            placeholder="username@myinstitution.com"
+                   />
+            </div>
+            <div class="messageBox">
+                <label for="message">Request</label><br />
+                <textarea
+                  id="message"
+                  cols="80"
+                  rows="8"
+                  required
+                  placeholder="Type your message here."></textarea>
+              </div>
+           
+            </form>      
+
+
+ 
+            <button onclick="myFunction()">Send</button>
+
+
+            <p id="demo"></p>
+           
+            <script>
+            function myFunction() {
+              var txt;
+              if (confirm("Thank you for your submission.")) {
+                txt = "I will provide a response to you soon!";
+              } else {
+                txt = "Email me if you have any concerns: wintk@miamioh.edu";
+              }
+              document.getElementById("demo").innerHTML = txt;
+            }
+            </script>
+
+
   </main>
     </div>
 
